@@ -49,12 +49,3 @@ span {
     color: white;
 }
 
-@keyframes sliding_left {
-    from {
-        left: 0px;
-    }
-    to {
-        left: -220px;
-    }
-  
-}
