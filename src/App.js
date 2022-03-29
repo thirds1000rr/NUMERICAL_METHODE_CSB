@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import { Layout, Menu } from 'antd';
-//import StarCanvas from './StarfieldCanvas';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './screen.css';
 import { FacebookFilled, BookFilled, CalculatorFilled } from '@ant-design/icons';
@@ -55,7 +54,6 @@ class App extends Component {
             </div>
           </Header>
           <Layout>
-            {/* <StarCanvas /> */}
             <Header className="header">
               <Menu theme="light" mode="horizontal" >
                 <SubMenu key="root_submenu" title={<span>Root of Equation</span>}>
