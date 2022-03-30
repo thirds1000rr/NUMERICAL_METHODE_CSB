@@ -31,7 +31,7 @@ span {
     background: #63abbd;
 }
 .ant-table-thead > tr > th {
-    color: rgba(0, 0, 0, 0.85);
+    color: rgba(155, 155, 155, 0.85);
     font-weight: bold;
     text-align: center;
     background: #fcc44d;

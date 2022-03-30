@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import { Layout, Menu } from 'antd';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './screen.css';
-import { FacebookFilled, BookFilled, CalculatorFilled } from '@ant-design/icons';
+import { BookFilled,PieChartOutlined } from '@ant-design/icons';
 
 import Graphical from './Calculate/Root of Equation/Graphical';
 import Bisection from './Calculate/Root of Equation/Bisection';
@@ -48,9 +48,9 @@ class App extends Component {
     return (
       <Router>
         <Layout>
-          <Header className="header" style={{color:"#F3AA00" ,height: "100px" }}>
+          <Header className="header" style={{color:"#e89a3c" ,height: "100px" }}>
             <div className="headertext">
-              <label className="typewriter"><CalculatorFilled  style={{color:"orange" ,fontSize:"40px", marginRight:"10px"}} />Numerical Method</label>
+              <label><PieChartOutlined  style={{color:"#e89a3c" ,fontSize:"40px", marginRight:"10px"}} />Numerical Method</label>
             </div>
           </Header>
           <Layout>
@@ -104,6 +104,7 @@ class App extends Component {
                 </SubMenu>
               </Menu>
             </Header>
+            
             <Layout style={{ padding: '0 25px 25px' }}>
               <Content style={{ padding: 150, margin: 0, minHeight: 280, }}>
                 <Switch>
