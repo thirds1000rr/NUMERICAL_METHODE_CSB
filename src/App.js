@@ -48,14 +48,14 @@ class App extends Component {
     return (
       <Router>
         <Layout>
-          <Header className="header" style={{color:"#e89a3c" ,height: "100px" }}>
+          <Header className="header" style={{backgroundColor:"#898785" ,height: "120px" }}>
             <div className="headertext">
-              <label><PieChartOutlined  style={{color:"#e89a3c" ,fontSize:"40px", marginRight:"10px"}} />Numerical Method</label>
+              <label><PieChartOutlined style={{color:"#FFA32F",fontSize:"40px", marginRight:"10px"}}/><h2 style={{color:"#FFA32F"}}>Numerical Method</h2></label>
             </div>
           </Header>
           <Layout>
-            <Header className="header">
-              <Menu theme="light" mode="horizontal" >
+            <Header className="header" style={{ backgroundColor:"#e89a3c" ,color:"#e89a3c"}}>
+              <Menu theme="light" mode="horizontal" style={{color:"#e89a3c"}} >
                 <SubMenu key="root_submenu" title={<span>Root of Equation</span>}>
                   <Menu.Item key="menu_graphoical" ><Link to="/graphical">Graphical</Link></Menu.Item>
                   <Menu.Item key="menu_bisection" ><Link to="/bisection">Bisection</Link></Menu.Item>
@@ -97,16 +97,16 @@ class App extends Component {
                   <Menu.Item key="menu_backward2h"><Link to="/backwardh2">Backward Divided-Differences O(h{<sup>2</sup>})</Link></Menu.Item>
                   <Menu.Item key="menu_central2h"><Link to="/centralh2">Central Divided-Differences O(h{<sup>4</sup>})</Link></Menu.Item>
                 </SubMenu>
-                <SubMenu key="de_submenu" title={<span>Ordinary Differential Equation</span>}>
+                {/* <SubMenu key="de_submenu" title={<span>Ordinary Differential Equation</span>}>
                   <Menu.Item key="menu_euler"><Link to="/euler">Euler's Method</Link></Menu.Item>
                   <Menu.Item key="menu_heun"><Link to="/heun">Heun's Method</Link></Menu.Item>
                   <Menu.Item key="menu_modifier"><Link to="/modifier-euler">Modifier Euler's Method</Link></Menu.Item>
-                </SubMenu>
+                </SubMenu> */}
               </Menu>
             </Header>
             
             <Layout style={{ padding: '0 25px 25px' }}>
-              <Content style={{ padding: 150, margin: 0, minHeight: 280, }}>
+              <Content style={{ padding: 90, margin: 0, minHeight: 280, }}>
                 <Switch>
                   {/* Root of Equation */}
                   <Route exact path="/graphical" component={Graphical} />
@@ -151,15 +151,13 @@ class App extends Component {
               </Content>
             </Layout>
           </Layout>
-          <Footer style={{ backgroundColor: "orange", minHeight: 120 }}>
+          <Footer style={{ backgroundColor: "#FF8438", minHeight: 120 }}>
             <p style={{ fontSize: "20px", fontWeight: "bold", color: "white" }}>
               © All Right Reserved<br />
 
               <p style={{fontSize:"22px", verticalAlign:"text-bottom"}}><BookFilled style={{ fontSize: "30px" }} /><a target="_blank" rel="noopener noreferrer" href="http://cs.kmutnb.ac.th/" style={{ color: "white", textDecoration: "none" }}> Department of Computer and Information Science - King Mongkut's University of Technology North Bangkok</a></p>
-
+              <p >Made by Bovornpol Jiturai</p>
             </p>
-
-
           </Footer>
         </Layout>
       </Router>

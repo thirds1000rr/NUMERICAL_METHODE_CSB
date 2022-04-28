@@ -23,15 +23,7 @@ label {
   font-size: 100px; 
   
 }
-.typewriter {
-  display: inline-block;
-  overflow: hidden;
-  font-size: 28px;
-  letter-spacing: 1px;
-  animation: typingText 3s , blink .75s step-end infinite;
-  white-space: nowrap;
-  border-right: 3px solid white;
-}
+
 
 
 
